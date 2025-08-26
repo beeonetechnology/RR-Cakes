@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+   <link rel="shortcut icon" href="images/logo1.png" type="">
+
+  <title> RR Cake </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="images/hero-bg.jpg" alt="">
+    </div>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+              <span>
+    <img
+      src="images/logo-white.png"
+      alt="brand logo"
+      srcset=""
+      style="width: 150px; height: auto; border-radius: 8px;"
+    >
+  </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home </a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="work.html">work</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="book.html">Contact <span class="sr-only">(current)</span> </a>
+              </li>
+            </ul>
+            
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- book section -->
+<!-- book section -->
+<section class="book_section layout_padding">
+  <div class="container">
+    <div class="heading_container">
+      <h2>Contact us
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form_container">
+          <form id="bookingForm">
+            <div>
+              <input type="text" id="name" class="form-control" placeholder="Your Name" required />
+            </div>
+            <div>
+              <input type="text" id="phone" class="form-control" placeholder="Phone Number" required />
+            </div>
+            <div>
+              <input type="text" id="place" class="form-control" placeholder="Your Place" required />
+            </div>
+            <div>
+              <textarea id="message" class="form-control" placeholder="Your Message" rows="4" required></textarea>
+            </div>
+            <div class="btn_box">
+              <button type="submit">
+                Book Now
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="map_container">
+          <iframe
+            src="https://www.google.com/maps?q=R%20R%20cake%20%26%20sweets%20Palath%20Aduvarakkal%20Thazham&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end book section -->
+
+<!-- WhatsApp Script -->
+<script>
+  document.getElementById("bookingForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // prevent actual form submission
+
+    // Get form values
+    var name = document.getElementById("name").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var place = document.getElementById("place").value.trim();
+    var message = document.getElementById("message").value.trim();
+
+    // Create WhatsApp message
+    var whatsappMessage = `*Table Booking Request*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Place:* ${place}%0A*Message:* ${message}`;
+
+    // WhatsApp number (with country code, no '+' or leading 0)
+    var whatsappNumber = "9446943366"; // 🔁 Replace with your number
+
+    // Redirect to WhatsApp
+    var whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+    window.open(whatsappURL, "_blank");
+  });
+</script>
+  <!-- end book section -->
+
+  <!-- footer section -->
+<footer class="footer_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 footer-col">
+        <div class="footer_contact">
+          <h4>
+            Contact Us
+          </h4>
+          <div class="contact_link_box">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Palath,Parambil Bazar,Moozhikkal
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call 9446943366, 9072733366
+              </span>
+            </a>
+          <!--  <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                demo@gmail.com
+              </span>
+            </a>-->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 footer-col">
+        <div class="footer_detail">
+          <a href="" class="footer-logo">
+            <!-- ✅ Logo with inline CSS only -->
+            <img
+              src="images/logo-white.png"
+              alt="RR Cakes Logo"
+              style="max-width: 150px; height: auto; display: block; margin: 0 auto; padding: 10px 0;">
+          </a>
+          <p>
+            We create fresh, delicious cakes to make every occasion special.<br>
+            Every bite is crafted with love, care, and a sprinkle of happiness.
+          </p>
+          <div class="footer_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 footer-col">
+        <h4>
+          Opening Hours
+        </h4>
+        <p>
+          Everyday
+        </p>
+        <p>
+          9.00 Am - 10.00 Pm
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-info">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="#">RR Cakes</a><br><br>
+        &copy; <span id="displayYear"></span> Distributed By
+        <a href="https://beeonedigital.com/" target="_blank">beeonedigital</a>
+      </p>
+    </div>
+  </div>
+</footer>
+<!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
