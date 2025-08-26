@@ -128,6 +128,26 @@
     transform: scale(1.08) rotate(1deg);
     filter: brightness(1.1);
   }
+  /* phone view images center align & same size */
+@media (max-width: 768px) {
+  .grid .col-sm-6 {
+    display: flex;
+    justify-content: center; /* horizontally center */
+    margin-bottom: 15px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 220px; /* phone-ൽ ഒരേ സൈസ് */
+    margin: 0 auto;
+  }
+
+  .animate-img {
+    width: 100%;
+    height: 220px; /* എല്ലാ images same height */
+    object-fit: cover; /* crop excess but keep ratio */
+  }
+}
 </style>
 
 
@@ -1065,5 +1085,6 @@
   <!-- End Google Map -->
 
 </body>
+
 
 </html>
